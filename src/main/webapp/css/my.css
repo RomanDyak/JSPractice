@@ -1,0 +1,228 @@
+.table_dark {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    width: 640px;
+    text-align: left;
+    border-collapse: collapse;
+    background: #252F48;
+    margin: 10px;
+}
+
+.table_dark th {
+    color: #EDB749;
+    border-bottom: 1px solid #37B5A5;
+    padding: 12px 17px;
+}
+
+.table_dark td {
+    color: #CAD4D6;
+    border-bottom: 1px solid #37B5A5;
+    border-right: 1px solid #37B5A5;
+    padding: 7px 17px;
+}
+
+.table_dark tr:last-child td {
+    border-bottom: none;
+}
+
+.table_dark td:last-child {
+    border-right: none;
+}
+
+.table_dark tr:hover td {
+    text-decoration: underline;
+}
+
+td img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.pagination {
+    font-weight: bold;
+    display: inline-block;
+    color: #444;
+    border: 1px solid #CCC;
+    background: #DDD;
+    box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    vertical-align: middle;
+    max-width: 100px;
+    padding: 5px;
+    text-align: center;
+    margin: 2px;
+    border-radius: 2px;
+}
+
+div.active {
+    color: red;
+    box-shadow: 0 0 5px 1px rgba(3, 252, 66, 0.6);
+}
+
+td.edit, td.delete {
+    cursor: pointer;
+    padding: 3px;
+    padding-left: 6px;
+}
+
+.form-wrapper {
+    max-width: 500px;
+}
+
+#createPlayer {
+    margin-left: 25px;
+}
+
+.border {
+    list-style: none;
+    padding: 0;
+}
+
+.border li input, select, button {
+    font-family: "Trebuchet MS", "Lucida Sans";
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.border li {
+    font-family: "Trebuchet MS", "Lucida Sans";
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 15px solid #f05d22;
+    box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, .1),
+    -2px -2px 5px 0 rgba(0, 0, 0, .1),
+    2px 2px 5px 0 rgba(0, 0, 0, .1),
+    -2px 2px 5px 0 rgba(0, 0, 0, .1);
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.2s all linear;
+}
+
+.border li:nth-child(2) {
+    border-color: #8bc63e;
+}
+
+.border li:nth-child(3) {
+    border-color: #fcba30;
+}
+
+.border li:nth-child(4) {
+    border-color: #1ccfc9;
+}
+
+.border li:nth-child(5) {
+    border-color: #493224;
+}
+
+.border li:nth-child(6) {
+    border-color: #8d3f11;
+}
+
+.border li:nth-child(7) {
+    border-color: #13e5ac;
+}
+
+.border li:hover {
+    border-left: 10px solid transparent;
+}
+
+.border li:nth-child(1):hover {
+    border-right: 80px solid #f05d22;
+}
+
+.border li:nth-child(2):hover {
+    border-right: 80px solid #8bc63e;
+}
+
+.border li:nth-child(3):hover {
+    border-right: 80px solid #fcba30;
+}
+
+.border li:nth-child(4):hover {
+    border-right: 80px solid #1ccfc9;
+}
+
+.border li:nth-child(5):hover {
+    border-right: 80px solid #493224;
+}
+
+.border li:nth-child(6):hover {
+    border-right: 80px solid #8d3f11;
+}
+
+.border li:nth-child(7):hover {
+    border-right: 80px solid #13e5ac;
+}
+
+.border li:nth-child(8):hover {
+    border-right: 200px solid #d91219;
+}
+
+li {
+    background: #252F48;
+    color: #CAD4D6;
+}
+
+/*--------------background experiments---------------*/
+body {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+    background-size: cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(75, 75, 250, 0.3);
+    border-radius: 3px;
+}
+
+.center h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+}
+
